@@ -336,6 +336,16 @@
       end
     end
 
+    -- hide insignificant
+    if pfNameplates_config.insignificants == "1" and not this.needNameUpdate then
+      local name_val = name:GetText()
+      for i, insignificant_val in pairs(L["insignificants"]) do
+        if name_val == insignificant_val then
+          this:Hide()
+        end
+      end
+    end
+
     -- level elite indicator
     if this.needEliteUpdate and pfNameplates.mobs[name:GetText()] then
       if level:GetText() ~= nil then

@@ -16,6 +16,7 @@ local checkbox = {
   ["friendclassc"]  = "Enable Friend Class Colors",
   ["overlap"]       = "Nameplate Overlap",
   ["critters"]      = "Hide Critters",
+  ["insignificants"]      = "Hide Insignificants (IE whelps in suppr)",
 }
 
 local text = {
@@ -53,6 +54,7 @@ function pfConfigCreate:ResetConfig()
   pfNameplates_config["fontsize"] = "12"
   pfNameplates_config["overlap"] = "0"
   pfNameplates_config["critters"] = "0"
+  pfNameplates_config["insignificants"] = "0"
 end
 
 pfConfigCreate:SetScript("OnEvent", function()

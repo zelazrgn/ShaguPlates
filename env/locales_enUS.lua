@@ -49,6 +49,13 @@ pfUI_locale["enUS"]["interrupts"] = {
   ["Goblin Mortar"] = true,
 }
 
+pfUI_locale["enUS"]["insignificants"] = {
+  'Corrupted Bronze Whelp',
+  'Corrupted Green Whelp',
+  'Corrupted Blue Whelp',
+  'Corrupted Red Whelp',
+}
+
 pfUI_locale["enUS"]["critters"] = {
   'Adder',
   'Beetle',
